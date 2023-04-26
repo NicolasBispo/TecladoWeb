@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <title>Login-Page</title>
+</head>
+
+<body>
+    
+    <form id='form-registro'  action="">
+        <h1>Formulário de registro</h1>
+        <label for="usuario_nome">Nome de usuário</label>
+        <input type="text" name="usuario_nome" placeholder="Insira seu usuário">
+        <label for="usuario_senha">Senha</label>
+        <input type="password" id='password_input' name='usuario_senha' placeholder="Insira sua senha" onkeydown="blockKeyboard()">
+        <small id="mensagem">⠀⠀⠀⠀⠀⠀⠀⠀</small>
+        <div class="teclado">
+            <div class="linha numeros">
+                <button class="tecla_letra">1</button>
+                <button class="tecla_letra">2</button>
+                <button class="tecla_letra">3</button>
+                <button class="tecla_letra">4</button>
+                <button class="tecla_letra">5</button>
+                <button class="tecla_letra">6</button>
+                <button class="tecla_letra">7</button>
+                <button class="tecla_letra">8</button>
+                <button class="tecla_letra">9</button>
+                <button class="tecla_letra">0</button>
+            </div>
+            <div class="linha1 letras">
+                <button class="tecla_letra">q</button>
+                <button class="tecla_letra">w</button>
+                <button class="tecla_letra">e</button>
+                <button class="tecla_letra">r</button>
+                <button class="tecla_letra">t</button>
+                <button class="tecla_letra">u</button>
+                <button class="tecla_letra">v</button>
+                <button class="tecla_letra">o</button>
+                <button class="tecla_letra">p</button>
+                <button class='tecla_funcional' id="'apagar_caractere" onclick="apagarCaractere()">&larr; </button>
+            </div>
+
+            <div class="linha2 letras">
+                
+                <button class='tecla_funcional' id='shift_button' onclick="toUpperCase()">shift</button>
+                <button class="tecla_letra">a</button>
+                <button class="tecla_letra">s</button>
+                <button class="tecla_letra">d</button>
+                <button class="tecla_letra">f</button>
+                <button class="tecla_letra">g</button>
+                <button class="tecla_letra">h</button>
+                <button class="tecla_letra">j</button>
+                <button class="tecla_letra">k</button>
+                <button class="tecla_letra">l</button>
+                <button class="tecla_letra">ç</button>
+            </div>
+            <div class="linha3 letras">
+                <button class='tecla_funcional'>@!~</button>
+                <button class="tecla_letra">z</button>
+                <button class="tecla_letra">x</button>
+                <button class="tecla_letra">c</button>
+                <button class="tecla_letra">v</button>
+                <button class="tecla_letra">b</button>
+                <button class="tecla_letra">n</button>
+                <button class="tecla_letra">m</button>
+            </div>
+
+
+        </div>
+        <input id='submit-button' type="submit" value="Registrar">
+    </form>
+    <script src="./js-control.js"></script>
+</body>
+
+
+</html>

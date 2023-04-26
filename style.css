@@ -1,0 +1,102 @@
+*{
+    font-family: arial;
+    user-select: none;
+}
+body{
+    background: url(./background.jpg) no-repeat;
+    background-size: cover;
+}
+#form-registro{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    max-width: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    background: rgb(78, 78, 78);
+    background: linear-gradient(180deg, rgb(73, 73, 73) 0%, rgb(39, 39, 39) 100%);
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 34px 0px rgba(2,61,41,1);
+-moz-box-shadow: 0px 0px 34px 0px rgba(2,61,41,1);
+box-shadow: 0px 0px 34px 0px rgba(2,61,41,1);
+}
+#form-registro label{
+    align-self: flex-start;
+    margin-left: 10%;
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+    margin-top: 5px;
+}
+#form-registro input{
+    width: 80%;
+    margin-top: 2px;
+    height: 30px;
+    border: solid 1px black;
+}
+#form-registro input:focus{
+    border: 1px solid rebeccapurple;
+    outline: 1px solid red;
+}
+#form-registro h1{
+    color: white;
+    font-weight: 900;
+}
+#submit-button{
+    
+    width: 150px !important;
+    background-color: rgb(0, 255, 221);
+    height: 30px;
+    border-radius: 30px;
+    border: 0;
+}
+.teclado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    width: fit-content;
+    margin-top: 5px;
+    padding: 4px;
+    border-radius: 5px;
+}
+.teclado > div{
+    display: flex;
+}
+.teclado > div > button{
+    margin: 0 auto;
+    width: 50px;
+    height: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.tecla_letra{
+    background-color: bisque;
+    border: 1px black solid;
+    transition: all 0.2s ease;
+}
+.tecla_letra:active{
+    background-color: rgb(180, 96, 0);
+    color: white;
+}
+.tecla_funcional{
+    background-color: rgb(90, 70, 70);
+    border: 1px black solid;
+    transition: all 0.2s ease;
+}
+.tecla_funcional:active{
+    background-color: firebrick;
+}
+.pressionado_button{
+    background-color: brown;
+}
+#mensagem{
+    padding: 5px;
+    color: red;
+    font-weight: 600;
+}
