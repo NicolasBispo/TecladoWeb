@@ -68,17 +68,20 @@ box-shadow: 0px 0px 34px 0px rgba(2,61,41,1);
     display: flex;
 }
 .teclado > div > button{
-    margin: 0 auto;
     width: 50px;
     height: 30px;
     font-weight: bold;
     color: rgb(0, 0, 0);
+    margin: 1px;
 }
 
 .tecla_letra{
     background-color: bisque;
     border: 1px black solid;
     transition: all 0.2s ease;
+}
+.tecla_letra:hover{
+    background-color: chocolate;
 }
 .tecla_letra:active{
     background-color: rgb(180, 96, 0);
@@ -88,6 +91,9 @@ box-shadow: 0px 0px 34px 0px rgba(2,61,41,1);
     background-color: rgb(90, 70, 70);
     border: 1px black solid;
     transition: all 0.2s ease;
+}
+.tecla_funcional:hover{
+    background-color: firebrick;
 }
 .tecla_funcional:active{
     background-color: firebrick;
@@ -99,4 +105,14 @@ box-shadow: 0px 0px 34px 0px rgba(2,61,41,1);
     padding: 5px;
     color: red;
     font-weight: 600;
+}
+.disabled_option{
+    background-color: dimgrey !important;
+}
+.disabled_option:hover{
+    background-color: dimgray !important;
+}
+.disabled_option:active{
+    background-color: dimgray !important;
+    color: black !important;
 }
