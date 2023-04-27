@@ -58,11 +58,15 @@ let simbolStatus = false
 function mudarSimbolos() {
     const simbolButton = document.querySelector('#simbolButton');
     simbolButton.classList.add('pressionado_button')
+
+    const shift_button = document.getElementById('shift_button');
+    
     const linha1_letras = document.querySelectorAll('.linha1 .tecla_letra');
     const linha2_letras = document.querySelectorAll('.linha2 .tecla_letra');
     const linha3_letras = document.querySelectorAll('.linha3 .tecla_letra');
     if (!simbolStatus) {
-
+        shift_button.classList.add('disabled_option');
+        shift_button.disabled = true;
 
         let contador1 = 0;
         const elementos_trocar_linha1 = ['@', '#', '$', '_', '&', '-', '+', '(', ')'];
@@ -89,6 +93,8 @@ function mudarSimbolos() {
         simbolStatus = true;
     }
     else {
+        shift_button.classList.remove('disabled_option');
+        shift_button.disabled = false;
         simbolStatus = false;
         simbolButton.classList.remove('pressionado_button');
         linha3_letras.forEach(button => {
